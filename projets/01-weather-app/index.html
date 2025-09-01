@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App - KENGNE Cabrel  </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+   <div class="container">
+            <h1>Weather App</h1>
+
+            <div class="search-container">
+                <input
+                    type="text"
+                    id="cityInput"
+                    placeholder="Entrer le nom de la ville..."
+                    autocomplete="off"
+                >
+                <button id="searchBtn"> Rechercher</button>
+            </div>
+
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                Recherche en cours...
+            </div>
+
+        <div class="error" id="error"></div>
+
+        <div class="weather-card" id="weather-Card">
+            <div class="city-name" id="cityName"></div>
+            <div class="weather-icon" id="weatherIcon"></div>
+            <div class="temperature" id="temperature"></div>
+            <div class="description" id="description"></div>
+
+            <div class="weather-details">
+                <div class="detail-item">
+                    <div class="detail-label">Ressenti</div>
+                    <div class="detail-value" id="feelslike"></div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Humidité</div>
+                    <div class="detail-value" id="humidity"></div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Vent</div>
+                    <div class="detail-value" id="WindSpeed"></div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Pression</div>
+                    <div class="detail-value" id="pressure"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            Développé par <strong>KENGNE Cabrel</strong>
+        </div>
+    </div>
+</body>
+</html>
